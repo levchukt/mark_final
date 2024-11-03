@@ -1,0 +1,356 @@
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #191919;
+    position: fixed;
+    width: 100%;
+    top: 0;left: 0;
+    z-index: 6;
+}
+body {
+    background-color: #111111;
+    font-family: 'Jacquarda Bastarda 9';
+    margin: 0;
+}
+.menu_link{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 50px 70px;
+}
+
+
+
+
+
+
+.cart_btn:hover .cart_img{
+    
+    animation: animCart 0.3s linear infinite;
+ }
+ 
+ @keyframes animCart {
+     0%{
+         transform: none;
+     }
+     30%{
+         transform: rotate(5deg);
+     }
+     70%{
+         transform: rotate(-5deg);
+     }
+ }
+
+
+
+
+
+.cart_btn{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Jacquarda Bastarda 9';
+   
+}
+.banner{
+    height: 100vh;
+    background-image: url(img/Dota.jpg);
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.title{
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 100;
+
+}
+
+.Catalog{
+   padding: 50px 0;
+}
+.container {
+    
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 0 100px;
+    flex-wrap: wrap;
+}
+
+.background-block {
+    width: 370px;
+    padding-bottom: 20px;
+    position: relative;
+    border-radius: 62px;
+    box-sizing: border-box;
+   overflow: hidden; 
+   transition: 0.3s all ease;
+}
+
+#background-block_1 {
+    background-color: #FF4654; 
+}
+#background-block_2{
+    background-color: #838B7D; 
+}
+
+#background-block_3{
+    background-color: #ACCDEE; 
+}
+
+#background-block_4{
+    background-color: #E7EEC2;
+}
+#background-block_5{
+    background-color: #C7D8FB;
+}
+#background-block_6{
+    background-color: #C578BE;
+}
+
+.background-block img{
+    width: 100%;
+}
+.image-placeholder {
+    background-color: #ccc; 
+    padding: 50px;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.background-block:hover{
+
+   animation: animBlock 0.3s ;
+}
+
+@keyframes animBlock {
+    0%{
+        transform: none;
+    }
+    30%{
+        transform: rotate(1deg);
+    }
+    70%{
+        transform: rotate(-1deg);
+    }
+}
+
+.button {
+
+    font-family: 'Chakra Petch';
+    font-weight: 30px;
+    position: relative;
+    background-color: transparent;
+    color: #e8e8e8;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    padding: 0;
+
+  }
+  
+
+
+  .button::before {
+    content: "Buy";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform: translate(0%,90%);
+    z-index: 99;
+    position: relative;
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+
+
+  
+  .button::after {
+
+    content: "500$";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform-origin: top;
+    transform: translate(0%,-100%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    transform: translate(0%,0%);
+  }
+  
+  .button:hover::after {
+    transform: translate(0%,-200%);
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active {
+    scale: 0.95;
+  }
+  
+
+  #button_1::after{
+    background-color: #942727; 
+  }
+  #button_2::after{
+    background-color: #424242; 
+  }
+  #button_3::after{
+    background-color: #75A3D0; 
+  }
+  #button_4::after{
+    background-color: #ccd3a9; 
+  }
+  #button_5::after{
+    background-color: #9aaac9; 
+  }
+  #button_6::after{
+    background-color: #ad5fa7; 
+  }
+  
+  .button::before{
+    z-index: 1;
+  }
+
+#button_1::before {
+    background: #a92c37;
+    
+}
+#button_2::before {
+    
+    background: #52564f;
+}
+#button_3::before {
+    background: #668db2;
+}
+#button_4::before {
+    background: #a4aa87;
+}
+#button_5::before {
+    background: #8d9bb8;
+}
+#button_6::before {
+    background: #763e71;
+}
+
+
+.Support{
+    height: 100vh;
+    color: #fff;
+    background-image: url(img/Image\ tf2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.support_h1{
+    font-weight: 1;
+    font-size: 40px;
+    text-align: center;
+}
+
+.search{
+    left: -12%;
+    transition: 0.3s all linear;
+    top: 10%;
+    width: 20%;
+    display: flex;
+    position: fixed;
+    z-index: 7;
+    height: 50px;
+}
+
+.search:hover{
+    left:0;
+    transition: 0.1s all linear;
+  
+}
+
+
+.search_btn:hover{
+    transform: scale(1.05);
+    transition: 0.1s all linear;
+
+
+}
+
+.search_btn img{
+    width: 100%; 
+    height: 100%;
+}
+
+.search_btn{
+    padding: 5px 15px;
+    border-radius: 0 50px 50px 0;
+    background-color: rgb(46, 46, 46);
+}
+
+.search_field{
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+}
+
+.Support{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_1{
+    border-radius: 30px;
+    background-color: #414141;
+    width: 80%;
+    justify-content: space-around ;
+    display: flex;
+    align-items: center;
+    margin-top:10%;
+    
+}
+
+.div_1 div{
+    font-weight: 5; 
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.img_1{
+    width: 40px;
+    height: 40px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
